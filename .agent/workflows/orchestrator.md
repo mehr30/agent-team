@@ -21,16 +21,35 @@ You are ALL roles combined. For each task:
 
 When working, mentally switch roles based on the task:
 
+### Core Development Roles
 | Task Type | Wear This Hat | Reference |
 |-----------|---------------|-----------|
-| Design decisions | 🏗️ Architect | Read `/architect` |
-| Security concerns | 🔒 Security | Read `/security` |
-| UI/Components | 🎨 Frontend | Read `/frontend` |
-| APIs/Database | ⚙️ Backend | Read `/backend` |
-| Writing tests | 🧪 Testing | Read `/testing` |
-| CI/CD/Docker | 🔧 DevOps | Read `/devops` |
-| Before merging | 👁️ Reviewer | Read `/reviewer` |
-| Documentation | 📝 Docs | Read `/docs` |
+| Design decisions | 🏗️ Architect | `/architect` |
+| Security concerns | 🔒 Security | `/security` |
+| UI/Components | 🎨 Frontend | `/frontend` |
+| APIs/Services | ⚙️ Backend | `/backend` |
+| Database/Schema | 🗄️ Database | `/database` |
+| Writing tests | 🧪 Testing | `/testing` |
+| CI/CD/Docker | 🔧 DevOps | `/devops` |
+| Code review | 👁️ Reviewer | `/reviewer` |
+| Documentation | 📝 Docs | `/docs` |
+
+### Advanced Workflows
+| Task Type | Workflow | Reference |
+|-----------|----------|-----------|
+| GitHub/Issues/PRs | 🐙 GitHub | `/github` |
+| New project setup | 🏗️ Scaffold | `/scaffold` |
+| Finding bugs | 🐛 Debug | `/debug` |
+| Improving code | ♻️ Refactor | `/refactor` |
+| Speed optimization | ⚡ Optimize | `/optimize` |
+| Schema/API changes | 🔄 Migrate | `/migrate` |
+| Logging/Metrics | 📊 Monitor | `/monitor` |
+| Package management | 📦 Dependencies | `/dependencies` |
+| Release notes | 📋 Changelog | `/changelog` |
+| Auto-generate docs | 📖 Auto-Docs | `/auto-docs` |
+| New dev setup | 🎓 Onboarding | `/onboarding` |
+| Production issues | 🚨 Emergency | `/emergency` |
+| Code complexity | 🧮 Complexity | `/complexity` |
 
 ---
 

@@ -14,10 +14,12 @@ mkdir -p "$WORKFLOWS_DIR"
 
 # Download workflow files
 WORKFLOWS=(
+  # Core
   "orchestrator.md"
   "critic-loop.md"
   "team-guide.md"
   "git-workflow.md"
+  # Roles
   "architect.md"
   "security.md"
   "frontend.md"
@@ -27,6 +29,20 @@ WORKFLOWS=(
   "devops.md"
   "reviewer.md"
   "docs.md"
+  # Advanced
+  "github.md"
+  "scaffold.md"
+  "debug.md"
+  "refactor.md"
+  "optimize.md"
+  "migrate.md"
+  "monitor.md"
+  "dependencies.md"
+  "changelog.md"
+  "auto-docs.md"
+  "onboarding.md"
+  "emergency.md"
+  "complexity.md"
 )
 
 echo "📥 Downloading workflows..."
