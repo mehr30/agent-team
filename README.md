@@ -5,7 +5,7 @@ AI dev team for Antigravity. One command to install, one command to use.
 ## Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USER/agent-team/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/mehr30/agent-team/main/install.sh | sh
 ```
 
 ## Use
@@ -31,12 +31,9 @@ The orchestrator is a full dev team in one agent:
 - 🔄 Reviews its own work (2-pass critic loop)
 - ✅ Commits when done
 
-## Push to GitHub
+## Contributing
 
-To make this installable for future projects:
-
+To use this on future projects:
 ```bash
-gh repo create agent-team --public --source=. --push
+curl -fsSL https://raw.githubusercontent.com/mehr30/agent-team/main/install.sh | sh
 ```
-
-Then update `install.sh` and `README.md` to replace `YOUR_USER` with your GitHub username.

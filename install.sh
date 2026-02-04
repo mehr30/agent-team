@@ -4,7 +4,7 @@
 
 set -e
 
-REPO_URL="https://raw.githubusercontent.com/YOUR_USER/agent-team/main"
+REPO_URL="https://raw.githubusercontent.com/mehr30/agent-team/main"
 WORKFLOWS_DIR=".agent/workflows"
 
 echo "🎯 Installing Agent Team..."
