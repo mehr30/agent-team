@@ -22,6 +22,7 @@ WORKFLOWS=(
   "security.md"
   "frontend.md"
   "backend.md"
+  "database.md"
   "testing.md"
   "devops.md"
   "reviewer.md"
