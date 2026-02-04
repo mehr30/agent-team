@@ -61,23 +61,22 @@ npm outdated
 
 ---
 
-## 🔁 Self-Review Protocol
+## 🔄 Critic Loop (MANDATORY)
 
-**After every task, review your own work:**
+**Run `/critic-loop` protocol after every task - 2 passes minimum.**
 
-1. [ ] Re-run security scans on changed code
-2. [ ] Verify no new vulnerabilities introduced
-3. [ ] Check that fixes don't break functionality
-4. [ ] Confirm all checklist items addressed
+Security-specific critic questions:
+> "What vulnerabilities would a penetration tester find in this?"
+> "How could a malicious user exploit this?"
+> "What security best practices am I violating?"
 
 ---
 
 ## 📝 Knowledge Logging
 
-After discovering issues, log to `CLAUDE.md`:
+After critic loop, log findings to `CLAUDE.md`:
 ```markdown
-### {date} - Security Issue: {Title}
-**Agent**: Security
+### {date} - Security Finding: {Title}
 **Vulnerability**: What was found
 **Fix**: How it was resolved
 **Prevention**: How to avoid in future

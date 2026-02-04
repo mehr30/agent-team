@@ -59,24 +59,23 @@ npm run build
 
 ---
 
-## 🔁 Self-Review Protocol
+## 🔄 Critic Loop (MANDATORY)
 
-**After every task, review your own work:**
+**Run `/critic-loop` protocol after every task - 2 passes minimum.**
 
-1. [ ] Test on multiple screen sizes (mobile, tablet, desktop)
-2. [ ] Check accessibility with keyboard navigation
-3. [ ] Verify no console errors or warnings
-4. [ ] Review component for reusability
-5. [ ] Confirm styling matches design system
+Frontend-specific critic questions:
+> "What would break on a tiny phone screen?"
+> "Can someone navigate this with only a keyboard?"
+> "What happens if the API is slow or fails?"
+> "Would a designer approve this styling?"
 
 ---
 
 ## 📝 Knowledge Logging
 
-After solving tricky UI issues, log to `CLAUDE.md`:
+After critic loop, log findings to `CLAUDE.md`:
 ```markdown
 ### {date} - UI Pattern: {Title}
-**Agent**: Frontend
 **Problem**: What was challenging
 **Solution**: How it was solved
 **Reusable**: Can this pattern be reused?

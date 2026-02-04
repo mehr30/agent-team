@@ -72,24 +72,23 @@ Errors: 400 (validation), 401 (unauthorized), 409 (duplicate)
 
 ---
 
-## 🔁 Self-Review Protocol
+## 🔄 Critic Loop (MANDATORY)
 
-**After every task, review your own work:**
+**Run `/critic-loop` protocol after every task - 2 passes minimum.**
 
-1. [ ] Test all endpoints manually (curl/Postman)
-2. [ ] Verify error handling returns proper status codes
-3. [ ] Check database queries are efficient
-4. [ ] Confirm input validation is complete
-5. [ ] Review API response format consistency
+Backend-specific critic questions:
+> "What happens if the database connection drops?"
+> "Can this endpoint be abused or scraped?"
+> "Are there N+1 query problems here?"
+> "What if concurrent requests hit this?"
 
 ---
 
 ## 📝 Knowledge Logging
 
-After solving backend issues, log to `CLAUDE.md`:
+After critic loop, log findings to `CLAUDE.md`:
 ```markdown
 ### {date} - Backend Pattern: {Title}
-**Agent**: Backend
 **Challenge**: What was difficult
 **Solution**: How it was solved
 **Performance**: Any performance considerations

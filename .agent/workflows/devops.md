@@ -98,24 +98,23 @@ CMD ["node", "dist/index.js"]
 
 ---
 
-## 🔁 Self-Review Protocol
+## 🔄 Critic Loop (MANDATORY)
 
-**After every task, review your own work:**
+**Run `/critic-loop` protocol after every task - 2 passes minimum.**
 
-1. [ ] Test CI pipeline runs successfully
-2. [ ] Verify Docker builds complete without errors
-3. [ ] Check secrets are not exposed in configs
-4. [ ] Confirm deployments are repeatable
-5. [ ] Review infrastructure changes for security
+DevOps-specific critic questions:
+> "What if this deployment fails halfway?"
+> "Are secrets exposed in logs or configs?"
+> "Will this scale when traffic spikes?"
+> "Can I rollback if something breaks?"
 
 ---
 
 ## 📝 Knowledge Logging
 
-After solving infra issues, log to `CLAUDE.md`:
+After critic loop, log findings to `CLAUDE.md`:
 ```markdown
 ### {date} - DevOps Lesson: {Title}
-**Agent**: DevOps
 **Issue**: What went wrong
 **Fix**: How it was resolved
 **Prevention**: How to avoid in future

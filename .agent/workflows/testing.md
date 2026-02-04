@@ -87,24 +87,23 @@ describe('FeatureName', () => {
 
 ---
 
-## 🔁 Self-Review Protocol
+## 🔄 Critic Loop (MANDATORY)
 
-**After every task, review your own work:**
+**Run `/critic-loop` protocol after every task - 2 passes minimum.**
 
-1. [ ] Run full test suite to ensure no regressions
-2. [ ] Verify tests are deterministic (no flaky tests)
-3. [ ] Check test coverage for edge cases
-4. [ ] Confirm mocks match real implementations
-5. [ ] Review test readability and naming
+Testing-specific critic questions:
+> "Is this test actually testing the right thing?"
+> "Would this test catch a real bug?"
+> "Is this test flaky or timing-dependent?"
+> "What edge case am I not covering?"
 
 ---
 
 ## 📝 Knowledge Logging
 
-After discovering testing patterns, log to `CLAUDE.md`:
+After critic loop, log findings to `CLAUDE.md`:
 ```markdown
 ### {date} - Testing Insight: {Title}
-**Agent**: Testing
 **Context**: What was being tested
 **Lesson**: What we learned
 **Pattern**: Reusable test pattern

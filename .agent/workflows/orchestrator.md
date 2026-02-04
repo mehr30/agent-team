@@ -89,15 +89,67 @@ git push -u origin HEAD && gh pr create --title "{title}" --body "{body}"
 
 ---
 
-## Self-Review (Mandatory)
+## 🔄 Critic Loop (MANDATORY - 2 PASSES)
 
-After EVERY significant change:
+After completing ANY piece of work, you MUST run the Critic Loop **twice**:
 
-1. [ ] Re-read what you just did
-2. [ ] Check against the role's quality standards
-3. [ ] Look for bugs or edge cases
-4. [ ] Verify it works as expected
-5. [ ] Log any lessons to `CLAUDE.md`
+### Pass 1: Find Issues
+Ask yourself:
+> **"If a senior engineer reviewed this, what issues would they point out? What's wrong, fragile, missing, or could break?"**
+
+- List every potential issue (at least 3)
+- Be ruthless - assume the reviewer is picky
+- Consider: edge cases, security, performance, readability, error handling
+
+Then **fix every issue you identified**.
+
+---
+
+### Pass 2: Validate Fixes
+Ask yourself:
+> **"Did my fixes introduce new problems? What did I miss the first time?"**
+
+- Review your fixes critically
+- Look for issues your fixes might have created
+- Check if you actually addressed the root cause
+
+Then **fix any remaining issues**.
+
+---
+
+### Critic Loop Template
+
+```
+🔍 CRITIC LOOP - PASS 1
+Issues a senior engineer would raise:
+1. [Issue]: ...
+   [Fix]: ...
+2. [Issue]: ...
+   [Fix]: ...
+3. [Issue]: ...
+   [Fix]: ...
+
+🔍 CRITIC LOOP - PASS 2
+Reviewing my fixes:
+1. [Check]: Did fix #1 work? Any new issues?
+2. [Check]: Did fix #2 work? Any new issues?
+3. [Missed]: Anything I overlooked?
+   [Fix]: ...
+
+✅ Critic Loop Complete
+```
+
+---
+
+### After Critic Loop
+
+Log significant findings to `CLAUDE.md`:
+```markdown
+### {date} - Critic Finding: {Title}
+**Found**: What the critic loop caught
+**Fixed**: How it was resolved
+**Lesson**: How to avoid next time
+```
 
 ---
 
